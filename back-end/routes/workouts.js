@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const c = require("../controllers/workoutController")
+const c = require('../controllers/workoutController')
 
 // GET workouts
 router.get('/', c.getWorkouts)
