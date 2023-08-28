@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
     res.json({mssg: 'default GET request'})
 })
 
-// connect to do
+// connect to db
 mongoose.connect(process.env.MONG_URI)
 .then(
     // listen for requests

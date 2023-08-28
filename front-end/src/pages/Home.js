@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 
 import WorkoutDetails from '../components/WorkoutDetails'
+import WorkoutForm from '../components/WorkoutForm'
 
 const Home = () => {
     const [workouts, setWorkouts] = useState(null)
@@ -25,6 +26,7 @@ const Home = () => {
                 // <p>{JSON.stringify(workout)}</p>
             ))}
         </div>
+        <WorkoutForm />
     </div>
   )
 }
